@@ -1,13 +1,19 @@
 package givenAutomation.automation;
 
-public class jenkinHello {
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public  class jenkinHello {
+@Test
+	public static void launck() {
 
 		System.out.println("Hello Mr. Virendra");
+
+		new ChromeDriver();
 		System.out.println("Hello Mr. Virendra");
-				
-		
 	}
 
+	
 }
+
+ 
