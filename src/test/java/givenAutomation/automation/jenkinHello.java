@@ -27,7 +27,7 @@ public class jenkinHello {
 //		co.addArguments("--headless");
 		co.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 		WebDriver driver = new ChromeDriver(co);
-		
+		  
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://www.naukri.com/");
