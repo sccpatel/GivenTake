@@ -24,6 +24,8 @@ public class jenkinHello {
 //		properti.getProperty("password");
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
+//		co.addArguments("--headless");
+		co.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 		WebDriver driver = new ChromeDriver(co);
 		
 		driver.manage().window().maximize();
